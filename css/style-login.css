@@ -211,5 +211,5 @@ input[type="password"] {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }

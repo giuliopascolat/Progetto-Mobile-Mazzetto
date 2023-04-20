@@ -38,10 +38,11 @@ var passwordToggle = document.getElementById("passwordToggle");
 passwordToggle.addEventListener("click", function() {
     if (passwordField.type === "password") {
         passwordField.type = "text";
-        passwordToggle.innerHTML = "Hide";
-    } else {
+        passwordToggle.src = "img/hide.png";
+     } else {
         passwordField.type = "password";
-        passwordToggle.innerHTML = "Show";
+        passwordToggle.src = "img/view.png";
+        // passwordToggle.style.height="30px";
     }
 });
 
@@ -115,3 +116,6 @@ function EventLoginButton(){
             errorMessage.style.color = "red";
         }
 }
+
+
+
