@@ -3,44 +3,7 @@ const Password = "1234";
 
 document.getElementById("login-button")
     .addEventListener("click", function() {
-        var username = document.getElementById("username")
-            .value;
-        var password = document.getElementById("password")
-            .value;
-        if (username === Username && password === Password) {
-            var successMessage = document.getElementById("successMessage");
-            successMessage.innerHTML = "Login effetuato!";
-            successMessage.style.color = "green";
-            window.location.href = "index.html";
-        } else if (username === "" && password === "") {
-            document.getElementById("username")
-                .style.borderColor = "red";
-            document.getElementById("password")
-                .style.borderColor = "red";
-            var errorMessage = document.getElementById("errorMessage");
-            errorMessage.innerHTML = "Attenzione! Inserire le credenziali";
-            errorMessage.style.color = "red";
-        } else if (username === "") {
-            document.getElementById("username")
-                .style.borderColor = "red";
-            var errorMessage = document.getElementById("errorMessage");
-            errorMessage.innerHTML = "Attenzione! Username non inserito";
-            errorMessage.style.color = "red";
-        } else if (password === "") {
-            document.getElementById("password")
-                .style.borderColor = "red";
-            var errorMessage = document.getElementById("errorMessage");
-            errorMessage.innerHTML = "Attenzione! Password non inserita";
-            errorMessage.style.color = "red";
-        } else {
-            document.getElementById("username")
-                .style.borderColor = "red";
-            document.getElementById("password")
-                .style.borderColor = "red";
-            var errorMessage = document.getElementById("errorMessage");
-            errorMessage.innerHTML = "Username o password errati. Riprova";
-            errorMessage.style.color = "red";
-        }
+        EventLoginButton();
     });
 
 document.getElementById("username")
@@ -110,3 +73,45 @@ bottoneLogin.onmouseover = function() {
 bottoneLogin.onmouseout = function() {
     bottoneLogin.style.backgroundColor = "rgb()";
 };
+
+
+function EventLoginButton(){
+    var username = document.getElementById("username")
+            .value;
+        var password = document.getElementById("password")
+            .value;
+        if (username === Username && password === Password) {
+            var successMessage = document.getElementById("successMessage");
+            successMessage.innerHTML = "Login effetuato!";
+            successMessage.style.color = "green";
+            window.location.href = "index.html";
+        } else if (username === "" && password === "") {
+            document.getElementById("username")
+                .style.borderColor = "red";
+            document.getElementById("password")
+                .style.borderColor = "red";
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.innerHTML = "Attenzione! Inserire le credenziali";
+            errorMessage.style.color = "red";
+        } else if (username === "") {
+            document.getElementById("username")
+                .style.borderColor = "red";
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.innerHTML = "Attenzione! Username non inserito";
+            errorMessage.style.color = "red";
+        } else if (password === "") {
+            document.getElementById("password")
+                .style.borderColor = "red";
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.innerHTML = "Attenzione! Password non inserita";
+            errorMessage.style.color = "red";
+        } else {
+            document.getElementById("username")
+                .style.borderColor = "red";
+            document.getElementById("password")
+                .style.borderColor = "red";
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.innerHTML = "Username o password errati. Riprova";
+            errorMessage.style.color = "red";
+        }
+}

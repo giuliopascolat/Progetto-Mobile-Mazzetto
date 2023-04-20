@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(0deg, rgba(177, 3, 251, 0.5), rgba(0, 208, 255, 0.4));
     height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -131,7 +132,6 @@ input[type="password"] {
     border-radius: 20px;
     width: 80%;
     padding: 10px;
-    margin-bottom: 10px;
     background-color: rgba(168, 112, 201, 0.276);
 }
 
@@ -199,4 +199,17 @@ input[type="password"] {
 
 #successMessage {
     color: green;
+}
+
+#passwordToggle{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
 }
