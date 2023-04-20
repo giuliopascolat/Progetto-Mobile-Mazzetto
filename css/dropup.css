@@ -1,0 +1,91 @@
+  @keyframes rotateRight1 {
+    from {
+      rotate: 0deg;
+    }
+
+    to {
+      rotate: -135deg;
+    }
+  }
+
+  @keyframes rotateRight2 {
+    from {
+      rotate: -135deg;
+    }
+
+    to {
+      rotate: -360deg;
+    }
+  }
+
+  @keyframes dropup {
+    from {
+      transform: translateX(150%);
+    }
+
+    to {
+      transform: translateX(2%);
+    }
+  }
+
+  @keyframes dropdown {
+    from {
+      transform: translateY(5%);
+    }
+
+    to {
+      transform: translateY(150%);
+    }
+  }
+
+  .dropups {
+    position: absolute;
+    display: inline-block;
+    right:80px;
+    z-index:-1;
+  }
+
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #f1f1f1;
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    align-content: center;
+  }
+
+  /* Links inside the dropup */
+  .dropup-content a {
+    left: 50%;
+    position:relative;
+    transform: translateX(-50%); 
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropup-content img {
+    left: 50%;
+    position:relative;
+    transform: translateX(-50%); 
+    display: block;
+    padding: 12px;
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Change color of dropup links on hover */
+  /* .dropup-content a:hover {background-color: #ddd}
+   */
+  /* Show the dropup menu on hover */
+  /* .dropup:hover .dropup-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropup button when the dropup content is shown
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  } */
